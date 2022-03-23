@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 const ArrowFunctionalComponentWithProps = (props) => {
     const [isAdmin, setIsAdmin] = useState(false)
 
-    const onClickEventHandler = () => {
-        setIsAdmin(true)
+    const onClickEventHandler = (previousState) => {
+        const { isAdmin } = previousState
+        setIsAdmin(!isAdmin)
     }
 
     return (

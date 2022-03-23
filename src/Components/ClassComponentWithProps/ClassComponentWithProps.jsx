@@ -9,9 +9,11 @@ class ClassComponentWithProps extends Component {
         }
     }
 
-    onClickEventHandler = () => {
+    onClickEventHandler = (previousState) => {
+        const { isAdmin } = previousState
+
         this.setState({
-            isAdmin: true
+            isAdmin: ! isAdmin
         });
     }
 

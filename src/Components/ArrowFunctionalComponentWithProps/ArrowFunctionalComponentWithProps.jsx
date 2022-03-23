@@ -4,8 +4,7 @@ const ArrowFunctionalComponentWithProps = (props) => {
     const [isAdmin, setIsAdmin] = useState(false)
 
     const onClickEventHandler = (previousState) => {
-        const { isAdmin } = previousState
-        setIsAdmin(!isAdmin)
+        setIsAdmin(!previousState.isAdmin)
     }
 
     return (

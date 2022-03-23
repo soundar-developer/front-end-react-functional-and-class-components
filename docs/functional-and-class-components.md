@@ -2,8 +2,18 @@
 
 [React First Public Release](https://github.com/facebook/react/blob/main/CHANGELOG.md#030-may-29-2013).
 
+## Components
+
+        - a component represent the part of user interface
+        - component are reusable and can be use in anywhere in user interface
+
+## There are mainly two components in React:
+
+1. Functional Components also known as Stateless component
+1. Class Component also known as Stateful component
+
 ## React Version Less than 16.8.0 
-1. Function or Stateful (with Hooks) Component 
+1. Function or Stateless Component 
 
         - It is simple javascript functions that simply returns html UI
         - It is also called “stateless” components because they simply accept data and display them in some form that is they are mainly responsible for rendering UI.
@@ -14,7 +24,7 @@
 
 1. Class or Stateful Component
 
-        - It is regular ES6 classes that extends component class form react library 
+        - It is regular ES6 classes that extends component class from react library 
         - Also known as “stateful” components because they implement logic and state.
         - It must have render() method returning html
         - It has complex UI Logic
